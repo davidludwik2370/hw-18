@@ -20,6 +20,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration: 20,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 8)),
@@ -33,6 +34,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration: 20,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 7)),
@@ -46,6 +48,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration: 25,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 6)),
@@ -57,6 +60,7 @@ const workoutSeed = [
         distance: 4,
       },
     ],
+    totalDuration: 20,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 5)),
@@ -70,6 +74,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration: 25,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 4)),
@@ -83,6 +88,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration: 20,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 3)),
@@ -96,6 +102,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration: 30,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 2)),
@@ -109,6 +116,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration: 20,
   },
   {
     day: new Date(new Date().setDate(new Date().getDate() - 1)),
@@ -122,6 +130,7 @@ const workoutSeed = [
         sets: 4,
       },
     ],
+    totalDuration: 20,
   },
 ];
 
@@ -135,3 +144,6 @@ db.deleteMany({})
     console.error(err);
     process.exit(1);
   });
+
+
+  // this.exercises[0].duration

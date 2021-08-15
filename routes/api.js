@@ -8,12 +8,22 @@ const Workout = require("../models/workout.js");
 
 //add exercise
 router.put("/api/workouts/:id", (req, res) => {
-  // console.log('called')
+  console.log(req.body)
   Workout.updateOne(
     { _id: req.params.id}, 
     { $push: { exercises: req.body } }
   ).then(workoutData => {
-    res.json(workoutData);
+    // res.json(workoutData);
+    Workout.updateOne(
+      { _id: req.params.id}, 
+      { $inc: { totalDuration: req.body.duration } }
+    ).then(workoutData => {
+      res.json(workoutData);
+      
+    })
+    .catch(err => {
+      res.status(400).json(err);
+    });
   })
   .catch(err => {
     res.status(400).json(err);
