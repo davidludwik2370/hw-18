@@ -5,7 +5,7 @@ Track your exercises with the fitness tracker! On the home screen you will be gr
 
 
 ![Here's a screenshot](./assets/add-exercise.png)
-![Here's the link](./index.html)
+![Here's the link](https://floating-crag-56618.herokuapp.com)
 
 Created by David Ludwik
 
