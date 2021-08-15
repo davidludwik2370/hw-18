@@ -13,7 +13,7 @@ router.put("/api/workouts/:id", (req, res) => {
     { _id: req.params.id}, 
     { $push: { exercises: req.body } }
   ).then(workoutData => {
-    // res.json(workoutData);
+    
     Workout.updateOne(
       { _id: req.params.id}, 
       { $inc: { totalDuration: req.body.duration } }
